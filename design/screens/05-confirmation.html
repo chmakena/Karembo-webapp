@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking confirmed &mdash; Karembo</title>
+<meta name="description" content="Karembo salon booking &mdash; UI/UX design mockup.">
+<link rel="stylesheet" href="../assets/tokens.css">
+<link rel="stylesheet" href="../assets/components.css">
+</head>
+<body>
+<div style="background:var(--k-plum-900);color:var(--k-plum-100);font-size:var(--k-text-xs);text-align:center;padding:var(--k-space-2) var(--k-space-4)">
+  <strong style="color:var(--k-gold-300)">Mockup</strong> &middot; Post-booking confirmation with the reference code.
+</div>
+<header class="k-header">
+  <div class="k-container k-row-between">
+    <div class="k-row" style="gap:var(--k-space-8)">
+      <a class="k-logo" href="02-home.html">Karembo</a>
+      <nav class="k-nav" aria-label="Main"><a class="k-nav-link" href="03-services.html">Services</a><a class="k-nav-link k-nav-link-active" href="04-booking.html">Book</a><a class="k-nav-link" href="06-my-bookings.html">My bookings</a></nav>
+    </div>
+    <div class="k-row" style="gap:var(--k-space-3)"><a class="k-btn k-btn-ghost k-btn-sm" href="07-auth.html">Sign in</a><a class="k-btn k-btn-primary k-btn-sm" href="04-booking.html">Book now</a></div>
+  </div>
+</header>
+<main id="main">
+<div class="k-container k-container-narrow k-section">
+  <div class="k-card" style="text-align:center;padding:var(--k-space-12) var(--k-space-8)">
+    <div class="k-avatar k-avatar-xl" style="margin:0 auto;background:var(--k-success-50);color:var(--k-success-600)">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h1 class="k-h1" style="margin-top:var(--k-space-6)">You&rsquo;re booked in</h1>
+    <p class="k-lead" style="margin-top:var(--k-space-3)">
+      We&rsquo;ve emailed the details to <strong>wanjiku@example.com</strong>.
+    </p>
+
+    <div style="display:inline-flex;align-items:center;gap:var(--k-space-3);margin-top:var(--k-space-6);padding:var(--k-space-3) var(--k-space-5);background:var(--k-plum-50);border:1px dashed var(--k-plum-200);border-radius:var(--k-radius-full)">
+      <span class="k-body-sm k-muted">Reference</span>
+      <strong class="k-numeric" style="font-family:var(--k-font-mono);letter-spacing:.06em">KMB-7F3A9C2E</strong>
+    </div>
+
+    <hr class="k-divider">
+
+    <div style="text-align:left;max-width:420px;margin:0 auto">
+      <div class="k-summary-row">
+        <span class="k-summary-key">Service</span>
+        <span class="k-summary-val">Signature Cut &amp; Style</span>
+      </div>
+      <div class="k-summary-row">
+        <span class="k-summary-key">Stylist</span>
+        <span class="k-summary-val">Amina Karisa</span>
+      </div>
+      <div class="k-summary-row">
+        <span class="k-summary-key">When</span>
+        <span class="k-summary-val">Wed 9 Sep 2026, 10:30</span>
+      </div>
+      <div class="k-summary-row">
+        <span class="k-summary-key">Where</span>
+        <span class="k-summary-val">14 Nyali Road, Mombasa</span>
+      </div>
+      <div class="k-summary-total">
+        <span class="k-muted">Payable at the salon</span>
+        <span class="k-price" style="color:var(--k-plum-700)">Ksh&nbsp;2,500</span>
+      </div>
+    </div>
+
+    <div class="k-row" style="justify-content:center;margin-top:var(--k-space-8);flex-wrap:wrap">
+      <a class="k-btn k-btn-primary" href="06-my-bookings.html">View my bookings</a>
+      <button class="k-btn k-btn-secondary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg> Add to calendar</button>
+    </div>
+  </div>
+
+  <div class="k-alert k-alert-info" style="margin-top:var(--k-space-6)">
+    <span class="k-alert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+    <div>
+      <strong>Need to change it?</strong> You can reschedule or cancel free of charge up to
+      12 hours before your appointment, from your bookings page.
+    </div>
+  </div>
+</div>
+</main>
+<footer style="background:var(--k-surface-inverse);color:var(--k-plum-100);margin-top:var(--k-space-24)">
+  <div class="k-container" style="padding-block:var(--k-space-12)">
+    <div class="k-grid k-grid-4" style="gap:var(--k-space-8)">
+      <div>
+        <div class="k-logo" style="color:#fff">Karembo</div>
+        <p class="k-body-sm" style="margin-top:var(--k-space-3);color:var(--k-plum-200);max-width:26ch">
+          A salon on Nyali Road, Mombasa. Protective styling, nails and skin, by appointment.
+        </p>
+      </div>
+      <div>
+        <h4 class="k-eyebrow" style="color:var(--k-gold-300)">Visit</h4>
+        <p class="k-body-sm" style="margin-top:var(--k-space-3);color:var(--k-plum-200)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> 14 Nyali Road, Mombasa<br>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92"/></svg> +254 700 000 000<br>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> hello@karembo.co.ke
+        </p>
+      </div>
+      <div>
+        <h4 class="k-eyebrow" style="color:var(--k-gold-300)">Opening hours</h4>
+        <p class="k-body-sm k-numeric" style="margin-top:var(--k-space-3);color:var(--k-plum-200)">
+          Tue&ndash;Fri&nbsp;&nbsp;09:00&ndash;18:00<br>
+          Saturday&nbsp;&nbsp;08:00&ndash;17:00<br>
+          Sun &amp; Mon&nbsp;&nbsp;Closed
+        </p>
+      </div>
+      <div>
+        <h4 class="k-eyebrow" style="color:var(--k-gold-300)">Design system</h4>
+        <p class="k-body-sm" style="margin-top:var(--k-space-3)">
+          <a href="01-foundations.html" style="color:var(--k-plum-100)">Foundations</a><br>
+          <a href="../index.html" style="color:var(--k-plum-100)">All screens</a>
+        </p>
+      </div>
+    </div>
+    <p class="k-body-sm" style="margin-top:var(--k-space-10);padding-top:var(--k-space-6);border-top:1px solid rgb(255 255 255 / .12);color:var(--k-plum-300)">
+      Static design mockup &mdash; Karembo salon booking. Not a live application.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
