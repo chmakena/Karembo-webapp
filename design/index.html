@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI/UX design &mdash; Karembo</title>
+<meta name="description" content="Karembo salon booking &mdash; UI/UX design mockup.">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/components.css">
+</head>
+<body>
+
+<header class="k-header">
+  <div class="k-container k-row-between">
+    <div class="k-row" style="gap:var(--k-space-8)">
+      <a class="k-logo" href="02-home.html">Karembo</a>
+      <nav class="k-nav" aria-label="Main"><a class="k-nav-link" href="03-services.html">Services</a><a class="k-nav-link" href="04-booking.html">Book</a><a class="k-nav-link" href="06-my-bookings.html">My bookings</a></nav>
+    </div>
+    <div class="k-row" style="gap:var(--k-space-3)"><a class="k-btn k-btn-ghost k-btn-sm" href="07-auth.html">Sign in</a><a class="k-btn k-btn-primary k-btn-sm" href="04-booking.html">Book now</a></div>
+  </div>
+</header>
+<main id="main">
+<div class="k-container k-section">
+  <span class="k-eyebrow">Karembo &middot; salon booking</span>
+  <h1 class="k-display-1" style="margin-top:var(--k-space-4)">UI/UX design</h1>
+  <p class="k-lead" style="max-width:64ch;margin-top:var(--k-space-5)">
+    Eleven screens covering the whole product: the customer booking journey and the
+    admin tooling the salon runs it with. Every screen is static HTML styled purely
+    from the tokens in <code>assets/tokens.css</code>, so this doubles as the
+    implementation reference for the Next.js app.
+  </p>
+
+  <div class="k-grid k-grid-4" style="margin-top:var(--k-space-10)">
+    <div class="k-stat"><p class="k-stat-label">Screens</p><p class="k-stat-value">11</p></div>
+    <div class="k-stat"><p class="k-stat-label">Design tokens</p><p class="k-stat-value">120+</p></div>
+    <div class="k-stat"><p class="k-stat-label">Components</p><p class="k-stat-value">18</p></div>
+    <div class="k-stat"><p class="k-stat-label">Breakpoints</p><p class="k-stat-value">3</p></div>
+  </div>
+
+  <div class="k-alert k-alert-info" style="margin-top:var(--k-space-8);max-width:80ch">
+    <span class="k-alert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2"/></svg></span>
+    <div>
+      <strong>Start with Foundations.</strong> It documents the palette with contrast ratios,
+      the type scale, the 4px spacing system, and every interactive component in each of its
+      states &mdash; including loading, empty and error.
+    </div>
+  </div>
+
+  <section style="margin-top:var(--k-space-12)">
+  <h2 class="k-h2">Foundations</h2>
+  <p class="k-muted" style="margin-top:var(--k-space-2);max-width:60ch">The visual language every screen is built from.</p>
+  <div class="k-grid k-grid-3" style="margin-top:var(--k-space-6)"><a class="k-card k-card-interactive" href="screens/01-foundations.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">01</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Foundations</h3>
+  <p class="k-body-sm k-muted">Design tokens, components and states — the specification the app is built from.</p>
+</a></div>
+</section><section style="margin-top:var(--k-space-12)">
+  <h2 class="k-h2">Customer</h2>
+  <p class="k-muted" style="margin-top:var(--k-space-2);max-width:60ch">What someone booking an appointment sees.</p>
+  <div class="k-grid k-grid-3" style="margin-top:var(--k-space-6)"><a class="k-card k-card-interactive" href="screens/02-home.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">02</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Home</h3>
+  <p class="k-body-sm k-muted">Customer landing page.</p>
+</a><a class="k-card k-card-interactive" href="screens/03-services.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">03</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Services</h3>
+  <p class="k-body-sm k-muted">Service catalogue with category filtering and search.</p>
+</a><a class="k-card k-card-interactive" href="screens/04-booking.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">04</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Book an appointment</h3>
+  <p class="k-body-sm k-muted">Booking flow, step 3 of 4 — the calendar and slot picker.</p>
+</a><a class="k-card k-card-interactive" href="screens/05-confirmation.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">05</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Booking confirmed</h3>
+  <p class="k-body-sm k-muted">Post-booking confirmation with the reference code.</p>
+</a><a class="k-card k-card-interactive" href="screens/06-my-bookings.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">06</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">My bookings</h3>
+  <p class="k-body-sm k-muted">Customer booking history, upcoming and past.</p>
+</a><a class="k-card k-card-interactive" href="screens/07-auth.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">07</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Sign in</h3>
+  <p class="k-body-sm k-muted">Sign in and registration, including an inline validation error.</p>
+</a></div>
+</section><section style="margin-top:var(--k-space-12)">
+  <h2 class="k-h2">Admin</h2>
+  <p class="k-muted" style="margin-top:var(--k-space-2);max-width:60ch">What the salon's front desk uses to run the day.</p>
+  <div class="k-grid k-grid-3" style="margin-top:var(--k-space-6)"><a class="k-card k-card-interactive" href="screens/08-admin-dashboard.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">08</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Admin overview</h3>
+  <p class="k-body-sm k-muted">Staff dashboard — today&#x27;s diary, weekly counters and stylist load.</p>
+</a><a class="k-card k-card-interactive" href="screens/09-admin-bookings.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">09</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Admin bookings</h3>
+  <p class="k-body-sm k-muted">All bookings with search, status and stylist filters.</p>
+</a><a class="k-card k-card-interactive" href="screens/10-admin-services.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">10</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Admin services</h3>
+  <p class="k-body-sm k-muted">Service catalogue management, including the create form.</p>
+</a><a class="k-card k-card-interactive" href="screens/11-admin-rota.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:var(--k-space-2)">
+  <div class="k-row-between">
+    <span class="k-badge k-badge-neutral k-numeric">11</span>
+    <span style="color:var(--k-primary)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </div>
+  <h3 class="k-h3" style="margin-top:var(--k-space-2)">Admin team &amp; rota</h3>
+  <p class="k-body-sm k-muted">Stylist profiles, weekly shifts, service coverage and time off.</p>
+</a></div>
+</section>
+</div>
+</main>
+<footer style="background:var(--k-surface-inverse);color:var(--k-plum-100);margin-top:var(--k-space-24)">
+  <div class="k-container" style="padding-block:var(--k-space-12)">
+    <div class="k-grid k-grid-4" style="gap:var(--k-space-8)">
+      <div>
+        <div class="k-logo" style="color:#fff">Karembo</div>
+        <p class="k-body-sm" style="margin-top:var(--k-space-3);color:var(--k-plum-200);max-width:26ch">
+          A salon on Nyali Road, Mombasa. Protective styling, nails and skin, by appointment.
+        </p>
+      </div>
+      <div>
+        <h4 class="k-eyebrow" style="color:var(--k-gold-300)">Visit</h4>
+        <p class="k-body-sm" style="margin-top:var(--k-space-3);color:var(--k-plum-200)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> 14 Nyali Road, Mombasa<br>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92"/></svg> +254 700 000 000<br>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> hello@karembo.co.ke
+        </p>
+      </div>
+      <div>
+        <h4 class="k-eyebrow" style="color:var(--k-gold-300)">Opening hours</h4>
+        <p class="k-body-sm k-numeric" style="margin-top:var(--k-space-3);color:var(--k-plum-200)">
+          Tue&ndash;Fri&nbsp;&nbsp;09:00&ndash;18:00<br>
+          Saturday&nbsp;&nbsp;08:00&ndash;17:00<br>
+          Sun &amp; Mon&nbsp;&nbsp;Closed
+        </p>
+      </div>
+      <div>
+        <h4 class="k-eyebrow" style="color:var(--k-gold-300)">Design system</h4>
+        <p class="k-body-sm" style="margin-top:var(--k-space-3)">
+          <a href="01-foundations.html" style="color:var(--k-plum-100)">Foundations</a><br>
+          <a href="../index.html" style="color:var(--k-plum-100)">All screens</a>
+        </p>
+      </div>
+    </div>
+    <p class="k-body-sm" style="margin-top:var(--k-space-10);padding-top:var(--k-space-6);border-top:1px solid rgb(255 255 255 / .12);color:var(--k-plum-300)">
+      Static design mockup &mdash; Karembo salon booking. Not a live application.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
