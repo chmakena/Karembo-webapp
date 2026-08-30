@@ -39,19 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Rust
-/karembo-backend/target/
-**/target/
-
-# JetBrains local datasource config can contain credentials
-.idea/dataSources.local.xml
-.idea/dataSources/
-.idea/workspace.xml
-
-# Subproject build output and dependencies. The starter .gitignore anchored these
-# to the repo root (/node_modules, /.next), which does not match the actual
-# locations under karembo-frontend/.
-**/node_modules/
-**/.next/
-**/target/
